@@ -39,4 +39,11 @@ safetail' [] = []
 
 safetail'' xs
 	| null xs = []
-	| otherwise = tail xs				
+	| otherwise = tail xs
+
+
+remove n xs = take (n) xs ++ drop (n+1) xs
+
+rev1 [] = []
+rev1 (x:xs) = (rev1 xs) ++ [x]
+
