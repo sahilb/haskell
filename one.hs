@@ -42,69 +42,6 @@ perfects n = [x | x <- [1..n], isPerfect(x) ]
 pairs :: [a] -> [(a, a)]
 pairs xs = zip xs (tail(xs))
 
-
 isSorted xs = sum [1 | (x,y) <- pairs (xs), x>y] == 0
 
 isSorted' xs = and [x<=y | (x,y) <- pairs (xs)]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
